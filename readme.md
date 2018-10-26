@@ -4,18 +4,18 @@
 * 和https://github.com/icindy/wxParse 的使用方式基本相同
     - 在对应swan文件中引入并使用。注意：data处有不同点，是三个大括号。
     ```
-    <import src="../../plugins/wxParse/wxParse.swan"/>
+    <import src="../../templates/wxParse/wxParse.swan"/>
     <view class="wxParse-wrap">
         <template is="wxParse" data="{{ {wxParseData:detailInfo.nodes} }}"></template>
     </view>
     ```
     - 在对应css文件中引入。
     ```
-    @import url(../../plugins/wxParse/wxParse.css);
+    @import url(../../templates/wxParse/wxParse.css);
     ```
     - 在对应js文件中引入并使用。
     ```
-    import WxParse from '../../plugins/wxParse/wxParse.js';
+    import WxParse from '../../templates/wxParse/wxParse.js';
     WxParse.wxParse('detailInfo', 'html', `<div>这里是富文本要渲染的html结构</div>`, this);
     ```
 
