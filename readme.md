@@ -25,7 +25,7 @@
     - {{item}} 替换成了 {{ {item} }}。
     - wx:for 替换成了 s-for 等。
     - 去掉了第21行image标签上重复的mode属性。
-    - 第21行```mode="widthFix"```换成了```mode="aspectFill"```。
+    - 第21行```mode="widthFix"```换成了```mode="aspectFill"```。因百度小程序使用```mode="widthFix"```会异常。
     - 第21行```style="width:{{item.width}}px;"```换成了```style="width:{{item.width}}px;height:{{item.height}}px;"```
 * wxParse.js中wx. 换成 swan.
 * wxParse.wxss更换为wxParse.css，并
