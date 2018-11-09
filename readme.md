@@ -2,7 +2,7 @@
 
 # 如何使用
 * 和https://github.com/icindy/wxParse 的使用方式基本相同
-    - 在对应swan文件中引入并使用。注意：data处有不同点，是三个大括号。
+    - 在对应swan文件中引入并使用。```注意：data处有不同点，是三个大括号。```
     ```
     <import src="../../templates/wxParse/wxParse.swan"/>
     <view class="wxParse-wrap">
