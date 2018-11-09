@@ -26,9 +26,12 @@
     - {{item}} 替换成了 {{ {item} }}。
     - wx:for 替换成了 s-for 等。
     - 去掉了第21行image标签上重复的mode属性。
-    - 第21行image标签上```mode="widthFix"```换成了```mode="aspectFill"```。因百度小程序使用富文本插件解析渲染image标签时使用```mode="widthFix"```会异常。如果直接对image组件使用是不会异常的，但是经过富文本解析就会异常(经由百度开发者工具测试得到的结果)。
+    - 第21行image标签上```mode="widthFix"```换成了```mode="aspectFill"```。因百度小程序使用富文本插件解析渲染image标签时使用```mode="widthFix"```会异常。如果直接对image组件使用是不会异常的，但是经过富文本解析而来的image组件使用这个属性就会异常(经由百度开发者工具测试得到的结果)。
     - 第21行image标签上```style="width:{{item.width}}px;"```换成了```style="width:{{item.width}}px;height:{{item.height}}px;"```
 * wxParse.js中wx. 换成 swan.
 * wxParse.wxss更换为wxParse.css，并
     - 去掉了view选择器的overflow: auto;
     - 给view选择器加了个父亲，变成了```.wxParse-wrap view{word-break:break-all;}```，防止影响太广。使用时，只需给富文本容器加个class="wxParse-wrap"就行了。
+
+# 依然存在的问题
+* 文本无法解析多个&nbsp;&nbsp;。后续再看吧。待续...
