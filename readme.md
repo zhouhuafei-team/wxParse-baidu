@@ -2,6 +2,7 @@
 
 # 如何使用
 * 和https://github.com/icindy/wxParse 的使用方式基本相同
+    - 首先我把wxParse目录放到了小程序的pages目录同级的templates目录下。
     - 在对应swan文件中引入并使用。```注意：data处有不同点，是三个大括号。```
     ```
     <import src="../../templates/wxParse/wxParse.swan"/>
